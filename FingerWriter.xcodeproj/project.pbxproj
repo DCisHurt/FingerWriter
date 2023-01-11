@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5227648F296DFE57000F5B4D /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5227648E296DFE57000F5B4D /* RecordingView.swift */; };
+		52BCBE902969F1D200EEE91B /* FingerWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBE8F2969F1D200EEE91B /* FingerWriterApp.swift */; };
+		52BCBE942969F1D300EEE91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BCBE932969F1D300EEE91B /* Assets.xcassets */; };
+		52BCBE972969F1D300EEE91B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BCBE962969F1D300EEE91B /* Preview Assets.xcassets */; };
+		52BCBEA82969F21100EEE91B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEA02969F21100EEE91B /* SettingView.swift */; };
+		52BCBEA92969F21100EEE91B /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEA12969F21100EEE91B /* HelpView.swift */; };
+		52BCBEAA2969F21100EEE91B /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEA22969F21100EEE91B /* FadeAnimation.swift */; };
+		52BCBEAB2969F21100EEE91B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEA32969F21100EEE91B /* MainView.swift */; };
+		52BCBEB02969F27700EEE91B /* Controls in Frameworks */ = {isa = PBXBuildFile; productRef = 52BCBEAF2969F27700EEE91B /* Controls */; };
+		52BCBEB8296A2B9D00EEE91B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEB7296A2B9D00EEE91B /* ContentView.swift */; };
+		52BCBEBD296A2C6900EEE91B /* leadMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEB9296A2C6900EEE91B /* leadMaker.swift */; };
+		52BCBEBE296A2C6900EEE91B /* drumMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEBA296A2C6900EEE91B /* drumMaker.swift */; };
+		52BCBEBF296A2C6900EEE91B /* chordMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEBB296A2C6900EEE91B /* chordMaker.swift */; };
+		52BCBEC0296A2C6900EEE91B /* melody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBEBC296A2C6900EEE91B /* melody.swift */; };
+		52BCBEC4296A2D3700EEE91B /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 52BCBEC3296A2D3700EEE91B /* Tonic */; };
+		52BCBEC7296A2D4A00EEE91B /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52BCBEC6296A2D4A00EEE91B /* AudioKit */; };
+		52BCBFC4296A3A2800EEE91B /* Midi in Resources */ = {isa = PBXBuildFile; fileRef = 52BCBFC2296A3A2800EEE91B /* Midi */; };
+		52BCBFC5296A3A2800EEE91B /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 52BCBFC3296A3A2800EEE91B /* Sounds */; };
+		52BCBFC7296B3FA100EEE91B /* CustomComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCBFC6296B3FA100EEE91B /* CustomComponent.swift */; };
+		52BCBFCA296B4F6F00EEE91B /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52BCBFC9296B4F6F00EEE91B /* SoundpipeAudioKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5227648E296DFE57000F5B4D /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		52BCBE8C2969F1D200EEE91B /* FingerWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BCBE8F2969F1D200EEE91B /* FingerWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerWriterApp.swift; sourceTree = "<group>"; };
+		52BCBE932969F1D300EEE91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52BCBE962969F1D300EEE91B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52BCBEA02969F21100EEE91B /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		52BCBEA12969F21100EEE91B /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		52BCBEA22969F21100EEE91B /* FadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
+		52BCBEA32969F21100EEE91B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		52BCBEB7296A2B9D00EEE91B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52BCBEB9296A2C6900EEE91B /* leadMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = leadMaker.swift; sourceTree = "<group>"; };
+		52BCBEBA296A2C6900EEE91B /* drumMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drumMaker.swift; sourceTree = "<group>"; };
+		52BCBEBB296A2C6900EEE91B /* chordMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chordMaker.swift; sourceTree = "<group>"; };
+		52BCBEBC296A2C6900EEE91B /* melody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = melody.swift; sourceTree = "<group>"; };
+		52BCBFC1296A390300EEE91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		52BCBFC2296A3A2800EEE91B /* Midi */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Midi; sourceTree = "<group>"; };
+		52BCBFC3296A3A2800EEE91B /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		52BCBFC6296B3FA100EEE91B /* CustomComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52BCBE892969F1D200EEE91B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BCBEC7296A2D4A00EEE91B /* AudioKit in Frameworks */,
+				52BCBEC4296A2D3700EEE91B /* Tonic in Frameworks */,
+				52BCBFCA296B4F6F00EEE91B /* SoundpipeAudioKit in Frameworks */,
+				52BCBEB02969F27700EEE91B /* Controls in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52BCBE832969F1D100EEE91B = {
+			isa = PBXGroup;
+			children = (
+				52BCBFC2296A3A2800EEE91B /* Midi */,
+				52BCBFC3296A3A2800EEE91B /* Sounds */,
+				52BCBE8E2969F1D200EEE91B /* FingerWriter */,
+				52BCBE8D2969F1D200EEE91B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52BCBE8D2969F1D200EEE91B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BCBE8C2969F1D200EEE91B /* FingerWriter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BCBE8E2969F1D200EEE91B /* FingerWriter */ = {
+			isa = PBXGroup;
+			children = (
+				52BCBEC1296A2C7200EEE91B /* Model */,
+				52BCBEAD2969F23900EEE91B /* View */,
+				52BCBEB7296A2B9D00EEE91B /* ContentView.swift */,
+				52BCBE8F2969F1D200EEE91B /* FingerWriterApp.swift */,
+				52BCBE932969F1D300EEE91B /* Assets.xcassets */,
+				52BCBFC1296A390300EEE91B /* Info.plist */,
+				52BCBE952969F1D300EEE91B /* Preview Content */,
+			);
+			path = FingerWriter;
+			sourceTree = "<group>";
+		};
+		52BCBE952969F1D300EEE91B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52BCBE962969F1D300EEE91B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52BCBEAD2969F23900EEE91B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52BCBEA32969F21100EEE91B /* MainView.swift */,
+				52BCBEA02969F21100EEE91B /* SettingView.swift */,
+				52BCBEA12969F21100EEE91B /* HelpView.swift */,
+				5227648E296DFE57000F5B4D /* RecordingView.swift */,
+				52BCBFC6296B3FA100EEE91B /* CustomComponent.swift */,
+				52BCBEA22969F21100EEE91B /* FadeAnimation.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52BCBEC1296A2C7200EEE91B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52BCBEBC296A2C6900EEE91B /* melody.swift */,
+				52BCBEB9296A2C6900EEE91B /* leadMaker.swift */,
+				52BCBEBB296A2C6900EEE91B /* chordMaker.swift */,
+				52BCBEBA296A2C6900EEE91B /* drumMaker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52BCBE8B2969F1D200EEE91B /* FingerWriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BCBE9A2969F1D300EEE91B /* Build configuration list for PBXNativeTarget "FingerWriter" */;
+			buildPhases = (
+				52BCBE882969F1D200EEE91B /* Sources */,
+				52BCBE892969F1D200EEE91B /* Frameworks */,
+				52BCBE8A2969F1D200EEE91B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FingerWriter;
+			packageProductDependencies = (
+				52BCBEAF2969F27700EEE91B /* Controls */,
+				52BCBEC3296A2D3700EEE91B /* Tonic */,
+				52BCBEC6296A2D4A00EEE91B /* AudioKit */,
+				52BCBFC9296B4F6F00EEE91B /* SoundpipeAudioKit */,
+			);
+			productName = FingerWriter;
+			productReference = 52BCBE8C2969F1D200EEE91B /* FingerWriter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52BCBE842969F1D100EEE91B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					52BCBE8B2969F1D200EEE91B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 52BCBE872969F1D200EEE91B /* Build configuration list for PBXProject "FingerWriter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52BCBE832969F1D100EEE91B;
+			packageReferences = (
+				52BCBEAE2969F27700EEE91B /* XCRemoteSwiftPackageReference "Controls" */,
+				52BCBEC2296A2D3700EEE91B /* XCRemoteSwiftPackageReference "Tonic" */,
+				52BCBEC5296A2D4A00EEE91B /* XCRemoteSwiftPackageReference "AudioKit" */,
+				52BCBFC8296B4F6F00EEE91B /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
+			productRefGroup = 52BCBE8D2969F1D200EEE91B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52BCBE8B2969F1D200EEE91B /* FingerWriter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52BCBE8A2969F1D200EEE91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BCBFC4296A3A2800EEE91B /* Midi in Resources */,
+				52BCBE972969F1D300EEE91B /* Preview Assets.xcassets in Resources */,
+				52BCBFC5296A3A2800EEE91B /* Sounds in Resources */,
+				52BCBE942969F1D300EEE91B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52BCBE882969F1D200EEE91B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BCBFC7296B3FA100EEE91B /* CustomComponent.swift in Sources */,
+				52BCBE902969F1D200EEE91B /* FingerWriterApp.swift in Sources */,
+				52BCBEBF296A2C6900EEE91B /* chordMaker.swift in Sources */,
+				52BCBEA82969F21100EEE91B /* SettingView.swift in Sources */,
+				52BCBEBE296A2C6900EEE91B /* drumMaker.swift in Sources */,
+				52BCBEB8296A2B9D00EEE91B /* ContentView.swift in Sources */,
+				5227648F296DFE57000F5B4D /* RecordingView.swift in Sources */,
+				52BCBEAA2969F21100EEE91B /* FadeAnimation.swift in Sources */,
+				52BCBEBD296A2C6900EEE91B /* leadMaker.swift in Sources */,
+				52BCBEC0296A2C6900EEE91B /* melody.swift in Sources */,
+				52BCBEA92969F21100EEE91B /* HelpView.swift in Sources */,
+				52BCBEAB2969F21100EEE91B /* MainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52BCBE982969F1D300EEE91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52BCBE992969F1D300EEE91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52BCBE9B2969F1D300EEE91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FingerWriter/Preview Content\"";
+				DEVELOPMENT_TEAM = D8LC4KC299;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FingerWriter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FingerWriter;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DCIH.FingerWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52BCBE9C2969F1D300EEE91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FingerWriter/Preview Content\"";
+				DEVELOPMENT_TEAM = D8LC4KC299;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FingerWriter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FingerWriter;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DCIH.FingerWriter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52BCBE872969F1D200EEE91B /* Build configuration list for PBXProject "FingerWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BCBE982969F1D300EEE91B /* Debug */,
+				52BCBE992969F1D300EEE91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BCBE9A2969F1D300EEE91B /* Build configuration list for PBXNativeTarget "FingerWriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BCBE9B2969F1D300EEE91B /* Debug */,
+				52BCBE9C2969F1D300EEE91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52BCBEAE2969F27700EEE91B /* XCRemoteSwiftPackageReference "Controls" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Controls.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		52BCBEC2296A2D3700EEE91B /* XCRemoteSwiftPackageReference "Tonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Tonic.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		52BCBEC5296A2D4A00EEE91B /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		52BCBFC8296B4F6F00EEE91B /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52BCBEAF2969F27700EEE91B /* Controls */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52BCBEAE2969F27700EEE91B /* XCRemoteSwiftPackageReference "Controls" */;
+			productName = Controls;
+		};
+		52BCBEC3296A2D3700EEE91B /* Tonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52BCBEC2296A2D3700EEE91B /* XCRemoteSwiftPackageReference "Tonic" */;
+			productName = Tonic;
+		};
+		52BCBEC6296A2D4A00EEE91B /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52BCBEC5296A2D4A00EEE91B /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		52BCBFC9296B4F6F00EEE91B /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52BCBFC8296B4F6F00EEE91B /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52BCBE842969F1D100EEE91B /* Project object */;
+}
