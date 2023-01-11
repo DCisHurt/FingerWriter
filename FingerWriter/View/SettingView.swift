@@ -1,20 +1,21 @@
 import Controls
 import SwiftUI
 
+/// the view of setting page
 struct SettingView: View {
     var body: some View {
         VStack {
-            SettingHeader()
-            SettingInstrument()
-            SettingVolume()
-            SettingReverb()
+            SettingHeaderView()
+            SettingInstrumentView()
+            SettingVolumeView()
+            SettingReverbView()
             Spacer()
         }
         .background(Color("myBackgroundA"))
     }
 }
 
-struct SettingHeader: View {
+struct SettingHeaderView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         HStack{
@@ -43,7 +44,7 @@ struct SettingHeader: View {
     }
 }
 
-struct SettingInstrument: View {
+struct SettingInstrumentView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         VStack{
@@ -74,7 +75,7 @@ struct SettingInstrument: View {
     }
 }
 
-struct SettingVolume: View {
+struct SettingVolumeView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         VStack{
@@ -99,7 +100,7 @@ struct SettingVolume: View {
     }
 }
 
-struct SettingReverb: View {
+struct SettingReverbView: View {
     @EnvironmentObject var generator: MelodyGen
     @State var radius: Float = 0
     var body: some View {

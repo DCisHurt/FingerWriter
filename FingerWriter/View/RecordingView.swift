@@ -1,6 +1,7 @@
 import SwiftUI
 
 
+/// the view of recording progress page
 struct RecordingView: View {
     @EnvironmentObject var generator: MelodyGen
     @State var progress: Double = 0.0

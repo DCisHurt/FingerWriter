@@ -8,6 +8,9 @@
 import SwiftUI
 import Controls
 
+/// main view of app
+/// show different view between menu, help, seeting and recording with animations
+/// judged by generator's state
 struct ContentView: View {
     @StateObject var generator = MelodyGen()
     var body: some View {

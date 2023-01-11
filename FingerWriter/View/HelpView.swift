@@ -1,17 +1,18 @@
 import Controls
 import SwiftUI
 
+/// the view of help page
 struct HelpView: View {
     var body: some View {
         VStack{
-            HelpHeader()
-            HelpBody()
+            HelpHeaderView()
+            HelpBodyView()
         }
         .background(Color("myBackgroundA"))
     }
 }
 
-struct HelpHeader: View {
+struct HelpHeaderView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         HStack{
@@ -40,16 +41,16 @@ struct HelpHeader: View {
     }
 }
 
-struct HelpBody: View {
+struct HelpBodyView: View {
     var body: some View {
         ScrollView{
             VStack{
                 VStack{
-                    HelpGenerate()
-                    HelpPlayback()
-                    HelpTools()
-                    HelpSetting()
-                    HelpExport()
+                    HelpGenerateView()
+                    HelpPlaybackView()
+                    HelpToolsView()
+                    HelpSettingView()
+                    HelpExportView()
                 }
                 .foregroundColor(Color("myPrimary"))
                 .frame(width: UIScreen.main.bounds.width * 0.9)
@@ -60,7 +61,7 @@ struct HelpBody: View {
     }
 }
 
-struct HelpGenerate: View {
+struct HelpGenerateView: View {
     var body: some View {
         ManualTitle(title: "Generate")
         
@@ -94,7 +95,7 @@ struct HelpGenerate: View {
     }
 }
 
-struct HelpPlayback: View {
+struct HelpPlaybackView: View {
     var body: some View {
         ManualTitle(title: "Playback")
                     
@@ -134,7 +135,7 @@ The Play/Stop button is to toggle music play or not.
     }
 }
 
-struct HelpTools: View {
+struct HelpToolsView: View {
     var body: some View {
         ManualTitle(title: "Setting")
 
@@ -149,7 +150,7 @@ struct HelpTools: View {
     }
 }
 
-struct HelpSetting: View {
+struct HelpSettingView: View {
     var body: some View {
             ManualTitle(title: "Instrument")
         
@@ -186,7 +187,7 @@ You can disable the target section by changing the selector to disable.
     }
 }
 
-struct HelpExport: View {
+struct HelpExportView: View {
     var body: some View {
         ManualTitle(title: "Export")
 

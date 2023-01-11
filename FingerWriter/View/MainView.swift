@@ -2,17 +2,18 @@ import Controls
 import SwiftUI
 import AudioKit
 
+/// the view of menu page
 struct MenuView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         VStack {
-            MenuHeader()
-            MenuBody()
+            MenuHeaderView()
+            MenuBodyView()
             
             Spacer()
             
             if (generator.isGenerated) {
-                MenuFooter().transition(.fadeInBottom)
+                MenuFooterView().transition(.fadeInBottom)
             }
         }
         .environmentObject(generator)
@@ -21,7 +22,7 @@ struct MenuView: View {
     }
 }
 
-struct MenuHeader: View {
+struct MenuHeaderView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         HStack{
@@ -67,7 +68,7 @@ struct MenuHeader: View {
     }
 }
 
-struct MenuBody: View {
+struct MenuBodyView: View {
     @EnvironmentObject var generator: MelodyGen
     @State var bar: Int = 2
 
@@ -93,7 +94,7 @@ struct MenuBody: View {
                 generator.bars = (pow(2, newValue) as NSDecimalNumber).intValue
             }
             
-            PitchShift()
+            PitchShiftView()
             
             ZStack{
                 Button {
@@ -117,7 +118,7 @@ struct MenuBody: View {
     }
 }
 
-struct MenuFooter: View {
+struct MenuFooterView: View {
     @EnvironmentObject var generator: MelodyGen
     @State var radius: Float = 0
     @State var islooping : Bool = false
@@ -183,7 +184,7 @@ struct MenuFooter: View {
     }
 }
 
-struct PitchShift: View {
+struct PitchShiftView: View {
     @EnvironmentObject var generator: MelodyGen
     var body: some View {
         ZStack {

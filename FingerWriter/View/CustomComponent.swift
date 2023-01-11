@@ -8,7 +8,7 @@
 import Controls
 import SwiftUI
 
-
+/// slider component style of app
 struct mySlider: View {
     @Binding var position: Float
     var title: String
@@ -38,6 +38,7 @@ struct mySlider: View {
     }
 }
 
+/// selector component style of app
 struct mySelector: View {
     @Binding var index: Int
     var title: String
@@ -64,6 +65,7 @@ struct mySelector: View {
     }
 }
 
+/// subtitle style of setting view
 struct mySubtitle: View {
     var text: String
     
@@ -86,7 +88,7 @@ struct mySubtitle: View {
     }
 }
 
-
+/// text style of manual title
 struct ManualTitle: View {
     var title: String
     
@@ -105,6 +107,7 @@ struct ManualTitle: View {
     }
 }
 
+/// text style of manual text
 struct ManualText: View {
     var text: String
     
