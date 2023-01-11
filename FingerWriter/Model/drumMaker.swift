@@ -1,13 +1,3 @@
-//
-//  Sequencer.swift
-//  SimpleSequences
-//
-//  Created by Nicholas Arner on 5/20/16. Edited Andy Hunt 10/07/22
-//  Copyright © 2022 University of York Department of Electronic Engineering
-//
-//  This file contains 2 samples and 2 MIDI file.
-//  Alter the comments to choose which one of each you want to be active
-
 import AudioKit
 
 
@@ -29,11 +19,17 @@ open class drumMaker {
         sequencer.setGlobalMIDIOutput(midiCallback.midiIn)
     }
     
+    /// set midi groove
+    /// - Parameters:
+    ///   - type: type of groove
+    ///   - bars: number of bar
     open func setMidi(type: String, bars: Int){
         sequencer.loadMIDIFile("Midi/"+type+"_"+String(bars))
         sequencer.setGlobalMIDIOutput(midiCallback.midiIn)
     }
     
+    /// set EXS24 instrument samples from url
+    /// - Parameter url: file location of samples
     open func setSample(url: String){
         try? instrument.loadEXS24(url)
     }

@@ -30,10 +30,8 @@ struct ContentView: View {
             }
         }
         .environmentObject(generator)
-        .animation(.default.speed(0.5),
-                   value: generator.isSetting)
-        .animation(.default.speed(0.5),
-                   value: generator.isHelp)
+        .animation(.default.speed(0.5), value: generator.isSetting)
+        .animation(.default.speed(0.5), value: generator.isHelp)
         .animation(.default.speed(0.5), value: generator.isRecording)
     }
 }

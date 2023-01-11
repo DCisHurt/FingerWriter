@@ -1,10 +1,3 @@
-//
-//  leadMaker.swift
-//  melodyGen
-//
-//  Created by test on 12/30/22.
-//
-
 import Foundation
 import Tonic
 import AudioKit
@@ -28,6 +21,10 @@ class leadMaker{
         track1.setMIDIOutput(midiCallback.midiIn)
     }
     
+    /// generate a bar of notes
+    /// - Parameters:
+    ///   - noteArray: notes content
+    ///   - bar: start position of the bar
     open func generateAbar(noteArray: Array<Note>, bar: Int){
         let beatSeeds = [0.5]
         let Nnotes = noteArray.count
@@ -50,6 +47,8 @@ class leadMaker{
         }
     }
     
+    /// set EXS24 instrument samples from url
+    /// - Parameter url: file location of samples
     open func setSample(url: String){
         try? instrument.loadWav(url)
     }

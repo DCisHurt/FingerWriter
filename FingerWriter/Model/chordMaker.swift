@@ -1,10 +1,3 @@
-//
-//  chordMaker.swift
-//  melodyGen
-//
-//  Created by test on 12/30/22.
-//
-
 import Foundation
 import Tonic
 import AudioKit
@@ -30,6 +23,11 @@ class chordMaker {
         track1.setMIDIOutput(midiCallback.midiIn)
     }
     
+    /// generate a group of chords with key and times
+    /// - Parameters:
+    ///   - patten: patten of groove of chords
+    ///   - k: root key
+    ///   - bars: number of bar
     open func generate(patten: Int, k: Key, bars: Int){
         track1.clear()
         sequencer.setLength(Duration(beats: Double(bars*4)))
@@ -46,6 +44,11 @@ class chordMaker {
         }
     }
     
+    /// add chord with groove patten in selected bar
+    /// - Parameters:
+    ///   - patten: <#patten description#>
+    ///   - noteArray: <#noteArray description#>
+    ///   - bar: <#bar description#>
     internal func addChord (patten: Int, noteArray: Chord, bar: Int) {
         let notes = noteArray.noteClasses
         let beat = (bar-1)*4
@@ -65,6 +68,11 @@ class chordMaker {
         }
     }
     
+    /// make groove in a bar with selected patten
+    /// - Parameters:
+    ///   - patten: patten of groove
+    ///   - note: target note
+    ///   - position: start position of the bar
     internal func grooveGen(patten: Int, note: Int8, position: Double){
         switch patten {
             case 1:
@@ -194,6 +202,8 @@ class chordMaker {
         }
     }
     
+    /// set EXS24 instrument samples from url
+    /// - Parameter url: file location of samples
     open func setSample(url: String){
         try? instrument.loadWav(url)
     }

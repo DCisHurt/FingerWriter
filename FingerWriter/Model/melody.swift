@@ -1,10 +1,3 @@
-//
-//  melody.swift
-//  melodyGen
-//
-//  Created by Roger Chen on 06/12/2022.
-//
-
 import Foundation
 import Tonic
 import AudioKit
@@ -102,8 +95,8 @@ class MelodyGen: ObservableObject {
         try? engine.start()
     }
     
+    /// convert generated music to a audio file and export to device
     open func export(){
-        
         do {
             
             self.isRecording = true
@@ -163,6 +156,7 @@ class MelodyGen: ObservableObject {
         }
     }
     
+    /// generate a melody
     open func generate(){
         let type = Int.random(in: 0...2)
         let feel = Int.random(in: 0...2)
@@ -195,6 +189,7 @@ class MelodyGen: ObservableObject {
         isGenerated = true
     }
     
+    /// update default genre's parameters for all section including insturment , volume and reverb
     internal func updateGenre(){
         switch genre{
             case 0:
@@ -256,6 +251,8 @@ class MelodyGen: ObservableObject {
         updateReverb()
     }
     
+    /// generate lead note with selected  key
+    /// - Parameter key: root key
     internal func leadGen(key: Key){
         lead.track1.clear()
         lead.sequencer.setLength(Duration(beats: Double(bars*4)))
@@ -269,6 +266,10 @@ class MelodyGen: ObservableObject {
         }
     }
 
+    /// generate chord with selected groove and key
+    /// - Parameters:
+    ///   - groove: patten of groove of chords
+    ///   - key: root key
     internal func chordGen(groove: String, key: Key){
         var patten = 0
         switch groove{
@@ -305,17 +306,21 @@ class MelodyGen: ObservableObject {
         }
     }
     
+    /// generate drum with selected groove
+    /// - Parameter groove: <#groove description#>
     internal func drumGen(groove: String){
         drum.setMidi(type: groove, bars: bars)
         drum.sequencer.setTempo(Double(tempo))
     }
     
+    /// update tempo for all section
     open func updateTempo() {
         lead.sequencer.setTempo(Double(self.tempo))
         chord.sequencer.setTempo(Double(self.tempo))
         drum.sequencer.setTempo(Double(self.tempo))
     }
     
+    /// update volume for all section
     open func updateVolume(){
         if(leadSample > 0){
             lead.instrument.amplitude = leadVolume * 50 - 45
@@ -329,6 +334,7 @@ class MelodyGen: ObservableObject {
         mixer.volume = masterVolume / 100
     }
     
+    /// toggle play or stop state for all section
     open func togglePlay(){
         if(isPlaying){
             lead.sequencer.stop()
@@ -347,6 +353,7 @@ class MelodyGen: ObservableObject {
         isPlaying.toggle()
     }
     
+    /// toggle loop functionality for all section
     open func toggleLoop(){
         lead.sequencer.toggleLoop()
         chord.sequencer.toggleLoop()
@@ -354,18 +361,21 @@ class MelodyGen: ObservableObject {
         isLooping.toggle()
     }
     
+    /// update sample and volume for all section
     open func updateInsturment(){
         updateLead()
         updateChord()
         updateDrum()
     }
     
+    /// update reverb for all section
     open func updateReverb(){
         leadReverb.dryWetMix = leadRevMix
         chordReverb.dryWetMix = chordRevMix
         drumReverb.dryWetMix = drumRevMix
     }
     
+    /// update lead sample and volume
     open func updateLead(){
         switch leadSample {
             case 1:
@@ -382,6 +392,7 @@ class MelodyGen: ObservableObject {
         }
     }
     
+    /// update chord sample and volume
     open func updateChord(){
         switch chordSample {
             case 1:
@@ -398,6 +409,7 @@ class MelodyGen: ObservableObject {
         }
     }
     
+    /// update drum sample and volume
     open func updateDrum(){
         switch drumSample {
             case 1:
