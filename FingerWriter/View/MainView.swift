@@ -12,7 +12,7 @@ struct MenuView: View {
             Spacer()
             
             if (generator.isGenerated) {
-                MenuFooter().transition(.fadeInButton)
+                MenuFooter().transition(.fadeInBottom)
             }
         }
         .environmentObject(generator)

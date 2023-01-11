@@ -2,7 +2,7 @@ import Controls
 import SwiftUI
 
 extension AnyTransition {
-    static var fadeInButton: AnyTransition {
+    static var fadeInBottom: AnyTransition {
         .asymmetric(
             insertion: .move(edge: .bottom).combined(with: .opacity),
             removal: .move(edge: .bottom).combined(with: .opacity)
