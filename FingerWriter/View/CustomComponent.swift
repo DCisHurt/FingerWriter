@@ -1,10 +1,3 @@
-//
-//  CustomComponent.swift
-//  FingerWriter
-//
-//  Created by test on 1/8/23.
-//
-
 import Controls
 import SwiftUI
 

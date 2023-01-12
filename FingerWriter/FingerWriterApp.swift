@@ -1,10 +1,3 @@
-//
-//  FingerWriterApp.swift
-//  FingerWriter
-//
-//  Created by test on 1/7/23.
-//
-
 import SwiftUI
 
 @main
@@ -17,6 +10,7 @@ struct FingerWriterApp: App {
     }
 }
 
+/// keep this app run in light mode
 public struct LightModeViewModifier: ViewModifier {
 @AppStorage("isDarkMode") var isDarkMode: Bool = false
 public func body(content: Content) -> some View {

@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  ui
-//
-//  Created by test on 12/29/22.
-//
-
 import SwiftUI
 import Controls
 
