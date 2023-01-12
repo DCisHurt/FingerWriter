@@ -416,10 +416,10 @@ class MelodyGen: ObservableObject {
                 drum.setSample(url: "Sounds/DrumK/DrumK")
                 drum.instrument.amplitude = drumVolume * 25 - 13
             case 2:
-                drum.setSample(url: "Sounds/808/808")
+                drum.setSample(url: "Sounds/Modern 808")
                 drum.instrument.amplitude = drumVolume * 25 - 13
             case 3:
-                drum.setSample(url: "Sounds/African/African")
+                drum.setSample(url: "Sounds/African Kit")
                 drum.instrument.amplitude = drumVolume * 25 - 13
             default:
                 drum.instrument.amplitude = -90
