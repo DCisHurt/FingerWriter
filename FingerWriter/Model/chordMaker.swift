@@ -77,124 +77,124 @@ class chordMaker {
         switch patten {
             case 1:
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+0.5),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.5),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+2.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+2.5),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.5),
                            duration: Duration(beats: 0.5))
             case 2:
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position),
                            duration: Duration(beats: 1))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.5),
                            duration: Duration(beats: 1))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+2.5),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.5),
                            duration: Duration(beats: 0.5))
             case 3:
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position),
                            duration: Duration(beats: 1))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.0),
                            duration: Duration(beats: 1))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+2.0),
                            duration: Duration(beats: 1))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.5),
                            duration: Duration(beats: 0.5))
             case 4:
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position),
                            duration: Duration(beats: 1))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.0),
                            duration: Duration(beats: 0.75))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+1.75),
                            duration: Duration(beats: 0.25))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+2.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+2.5),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.0),
                            duration: Duration(beats: 0.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.5),
                            duration: Duration(beats: 0.5))
             case 5:
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position),
                            duration: Duration(beats: 4))
             case 6:
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position),
                            duration: Duration(beats: 3.5))
                 track1.add(noteNumber: MIDINoteNumber(note),
-                           velocity: 127,
+                           velocity: 105,
                            position: Duration(beats: position+3.5),
                            duration: Duration(beats: 0.5))
             default:

@@ -385,7 +385,8 @@ class MelodyGen: ObservableObject {
                 lead.setSample(url: "Sounds/xylophone")
                 lead.instrument.amplitude = leadVolume * 50 - 45
             case 3:
-                lead.setSample(url: "Sounds/organ")
+//                lead.setSample(url: "Sounds/organ")
+                try? lead.instrument.loadEXS24("Sounds/Full Organ")
                 lead.instrument.amplitude = leadVolume * 50 - 45
             default:
                 lead.instrument.amplitude = -90
@@ -402,7 +403,7 @@ class MelodyGen: ObservableObject {
                 chord.setSample(url: "Sounds/piano")
                 chord.instrument.amplitude = chordVolume * 50 - 45
             case 3:
-            chord.setSample(url: "Sounds/bell")
+                chord.setSample(url: "Sounds/bell")
                 chord.instrument.amplitude = chordVolume * 50 - 45
             default:
                 chord.instrument.amplitude = -90
