@@ -8,6 +8,7 @@ You can use the result of this app as a starting point for writing a song or put
 
 <p align="center">
   <img src="img/main.png" width=40% />
+  <img src="img/setting.png" width=40% />
 </p>
 
 ## Category
