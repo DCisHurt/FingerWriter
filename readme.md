@@ -7,7 +7,7 @@ Finger Writer allows you to produce a song in just a few steps, even if you have
 You can use the result of this app as a starting point for writing a song or put it into your short film as background music. For example, the soundtrack to a Tiktok video or an Instagram story.
 
 <p align="center">
-  <img src="img/main.png" width=40% />
+  <img src="img/main.png" width=40.5% />
   <img src="img/setting.png" width=40% />
 </p>
 
